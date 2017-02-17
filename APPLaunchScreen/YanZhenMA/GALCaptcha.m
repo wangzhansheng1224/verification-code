@@ -75,7 +75,8 @@
 //    self.backgroundColor = kRandomColor;
     //获得要显示验证码字符串，根据长度，计算每个字符显示的大概位置
     NSString *text = [NSString stringWithFormat:@"%@",self.CatString];
-    CGSize cSize = [@"S" sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:20]}]; int width = rect.size.width / text.length - cSize.width;
+    CGSize cSize = [@"S" sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:20]}];
+    int width = rect.size.width / text.length - cSize.width;
     int height = rect.size.height - cSize.height;
     CGPoint point;
     
